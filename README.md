@@ -1,4 +1,4 @@
-####  Solana Hackaton Entry
+####  Solana Hyperdrive Hackaton Entry
 
 <img src="robot.png" alt="drawing" width="250"/>
 
@@ -54,4 +54,4 @@ This starts the main loop, printing prices, indicators, and generated signals ea
 
 ### Personal note <strike>excuses</strike>
 
-<font size="-1"> I did this project in a laptop with 7gb of ram and, a ryzen 5 and radeon vega mobile that was constantly at 95ºC with only a solana test validator. Of the 6 days I had to do this I wasted most of it creating smart contracts and reading the docs, trying to schedule solana transactions, which of course didn't work. In the last hours I had the ideia to host in the Akash Network, but it was too late. The good side is that I learned a lot about solana smart contracts. </font>
+<font size="-1"> I did this project in a laptop with 7gb of ram, a ryzen 5 and a radeon vega mobile that was constantly at 95ºC with only a solana test validator. Of the 6 days I had to do this I wasted most of it creating dummy smart contracts and reading the docs. Trying to schedule solana transactions to make a totally decentralized trading bot. Which of course didn't work. In the last hours I had the ideia to host in the Akash Network instead, but it was too late, the website was not working. The good side is that I learned a lot about solana smart contracts. </font>

@@ -3,7 +3,6 @@ use crate::jupiter;
 use crate::signal::*;
 use crate::strategy::Strategy;
 use ta::{indicators::RelativeStrengthIndex, DataItem, Next, Period};
-// use pyth::get_price();
 
 pub struct Trader {
     strategy: Strategy,
