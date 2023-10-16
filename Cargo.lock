@@ -1918,7 +1918,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "latent-token-robot"
+name = "latent-token-robot-public"
 version = "0.1.0"
 dependencies = [
  "clap 4.4.6",
