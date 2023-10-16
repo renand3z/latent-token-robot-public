@@ -1,0 +1,19 @@
+[package]
+name = "latent-token-robot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+ta = "0.5.0"
+elated-jupiter-query = { path = "../elated-jupiter-query"}
+pyth-sdk-solana = "0.8.0"
+solana-client = "1.16.17"
+solana-program = "1.16.17"
+
+reqwest = { version = "0.11.11", features = ["json"] }
+serde = { version = "1.0.139", features = ["derive"] }
+tokio = { version = "1.20.0", features = ["full"] }
+clap =  { version = "4.3.23", features = ["derive"]}
