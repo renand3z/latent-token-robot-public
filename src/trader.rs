@@ -1,7 +1,8 @@
-use crate::pyth;
 use crate::jupiter;
+use crate::pyth;
 use crate::signal::*;
 use crate::strategy::Strategy;
+use crate::transaction;
 use ta::{indicators::RelativeStrengthIndex, DataItem, Next, Period};
 
 pub struct Trader {
@@ -46,13 +47,11 @@ impl Trader {
                     match signal {
                         Signal::BUY => {
                             println!("🧐📈 A buy signal! Let's see if my balance is okay");
-                            // self.handle_buy();
-                            // self.update_balance();
+                            self.handle_buy();
                         }
                         Signal::SELL => {
                             println!("🧐📉 A sell signal! Let's see if my balance is okay");
-                            // self.handle_sell();
-                            // self.update_balance();
+                            self.handle_sell();
                         }
                         Signal::NONE => {
                             println!("😴 waiting for a signal");
@@ -64,20 +63,10 @@ impl Trader {
         }
     }
 
-    // pub fn handle_buy(&self) {
-    //     if self.wallet.eth < 2.5 {
-    //         println!("Conditions are in order, buying...");
-    //         self.wallet.buy();
-    //     } else {
-    //         println!("too much sol")
-    //     }
-    // }
-    // pub fn handle_sell(&self) {
-    //     if self.wallet.eth > 1.0 {
-    //         println!("Conditions are in order, selling...");
-    //         self.wallet.sell();
-    //     } else {
-    //         println!("too little sol")
-    //     }
-    // }
+    pub fn handle_buy(&self) {
+        let _ = transaction::run();
+    }
+    pub fn handle_sell(&self) {
+        let _ = transaction::run();
+    }
 }

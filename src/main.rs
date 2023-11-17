@@ -3,6 +3,7 @@ mod pyth;
 mod signal;
 mod strategy;
 mod trader;
+mod transaction;
 use strategy::Strategy;
 use trader::Trader;
 
